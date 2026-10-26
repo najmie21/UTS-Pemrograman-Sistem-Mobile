@@ -71,6 +71,7 @@ class _TambahMenuPageState extends State<TambahMenuPage> {
               const SizedBox(height: 16.0),
               TextFormField(
                 controller: _hargaController,
+                keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
                   labelText: 'Harga Menu',
                   border: OutlineInputBorder(),
