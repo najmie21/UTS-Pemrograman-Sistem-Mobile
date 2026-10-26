@@ -17,6 +17,7 @@ class DetailMenuPage extends StatelessWidget {
           color: Colors.white, 
           fontWeight: FontWeight.bold,
         ),
+
         backgroundColor: const Color.fromARGB(255, 100, 183, 251),
         leading: IconButton(
           icon: const Icon(
@@ -31,10 +32,19 @@ class DetailMenuPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.restaurant, 
-              size: 80, 
-              color: Color.fromARGB(255, 100, 183, 251)
+            Container(
+              width: 140,
+              height: 140,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 190, 232, 253), // Warna kotak lembut
+                borderRadius: BorderRadius.circular(28), // Sudut melengkung
+              ),
+              
+              child: const Icon(
+                Icons.restaurant, 
+                size: 80, 
+                color: Color.fromARGB(255, 100, 183, 251)
+              ),
             ),
 
             const SizedBox(height: 16),
